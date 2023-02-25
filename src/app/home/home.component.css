@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #2f303a;
+  background-image: url("../../assets/images/Designed-Circle.png");
+  background-repeat: no-repeat;
+  background-position-x: 900px;
+  background-position-y: 206px;
+}
+
+.main-img {
+  position: absolute;
+  width: 700px;
+  height: 578px;
+  margin-left: -22px;
+  margin-top: -26px;
+}
+
+/* BLUE */
+.home-page-circle-1 {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-top: -7px;
+  margin-left: 397px;
+  border-radius: 100%;
+  background: rgba(22, 114, 167, 0.06);
+}
+
+/* PINK */
+.home-page-circle-2 {
+  width: 280px;
+  height: 240px;
+  margin-left: 45px;
+  border-radius: 100%;
+  background: rgba(188, 56, 160, 0.1);
+}
+
+.main-text {
+  position: absolute;
+  margin: 42px 285px 0px 600px;
+  width: 600px;
+  line-height: 46px;
+  align-items: center;
+  padding: 25px 9px 45px 45px;
+}
+
+.main-text h1 {
+  font-weight: 600px;
+  font-size: 62px;
+  color: #ffffff;
+}
+
+.main-text h4 {
+  font-weight: 500px;
+  font-size: 26px;
+  line-height: 66px;
+  color: #ffffff;
+}
+
+.main-text button {
+  width: 176.81px;
+  height: 70.61px;
+  margin-left: 0px;
+  background: #1672a7;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
+.main-text button:hover {
+  width: 180px;
+  height: 74px;
+  cursor: pointer;
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .main-text {
+    margin: 500px 0px 0px 0px;
+  }
+  body {
+    background-image: none;
+  }
+  .nav_links {
+    display: block;
+    margin-left: 100px;
+  }
+  .main-img {
+    margin-top: 100px;
+    width: 450px;
+    height: 450px;
+  }
+  .home-page-circle-2 {
+    margin: 0px;
+    width: 0px;
+    height: 100px;
+  }
+  .home-page-circle-1 {
+    display: none;
+  }
+  .main-text {
+    width: 400px;
+    line-height: 66px;
+  }
+}
+
+/* TABLET & LAPTOP */
+@media screen and (min-width: 599px) and (max-width: 1200px) {
+  body {
+    background-position-x: 524px;
+    background-position-y: 83px;
+  }
+  .nav_links {
+    margin-left: 300px;
+  }
+  .main-img {
+    margin-top: 80px;
+    width: 660px;
+    height: 630px;
+  }
+  .home-page-circle-1 {
+    width: 300px;
+    height: 250px;
+    margin-left: 397px;
+  }
+  .home-page-circle-2 {
+    width: 300px;
+    height: 280px;
+    margin-left: 45px;
+  }
+  .main-text {
+    margin: 320px 0px 0px 500px;
+    width: 400px;
+    line-height: 66px;
+  }
+}

@@ -1,0 +1,88 @@
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+  li,
+  a {
+    font-weight: 200;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+  }
+
+  header {
+    background-color: #2f303a;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+  }
+  .nav_links {
+    list-style: none;
+    display: flex;
+    margin-left: 700px;
+  }
+  .nav_links li {
+    padding: 10px 20px;
+    margin-left: 3px;
+  }
+
+  .nav_links .home {
+    transition: all 0.8s ease-out;
+  }
+  .nav_links .home:hover {
+    background: #1672a7;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .nav_links .discover {
+    transition: all 0.8s ease-out;
+  }
+  .nav_links .discover:hover {
+    background: #1672a7;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .nav_links .join {
+    transition: all 0.8s ease-out;
+  }
+  .nav_links .join:hover {
+    background: #1672a7;
+    border-radius: 8px;
+    color: #ffffff;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  .soundwave {
+    color: white;
+    font-weight: 700;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav_links {
+      margin-left: 50px;
+    }
+  }
+
+  @media screen and (min-width: 599px) and (max-width: 1200px) {
+    body {
+      background-position-x: 524px;
+      background-position-y: 83px;
+    }
+    .nav_links {
+      margin-left: 300px;
+    }
+  }

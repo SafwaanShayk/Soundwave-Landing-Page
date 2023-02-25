@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soundwave</title>
+    <link rel="stylesheet" href="signup.component.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="mid-text">Join the <span>Fun.</span></div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2"
+          >
+            <form [formGroup]="contactForm" class="form-group">
+              <div id="user-data">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input
+                    type="text"
+                    id="username"
+                    class="form-control"
+                    formControlName="username"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    formControlName="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Feedback</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  formControlName="feedback"
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-primary"
+                type="submit"
+                [disabled]="contactForm.invalid"
+                (click)="submitData(contactForm.value)"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="card-text-center">
+      <a href="#"><div class="card-footer">About Us</div></a>
+      <a href="#"><div class="card-footer">Contact</div></a>
+      <div class="links">
+        <a href="#"
+          ><div class="card-footer">
+            <i class="bi bi-twitter"></i>Twitter
+          </div></a
+        >
+        <a href="#"
+          ><div class="card-footer">
+            <i class="bi bi-facebook"></i>Facebook
+          </div></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
